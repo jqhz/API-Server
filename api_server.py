@@ -21,7 +21,7 @@ print("Test API key:", TEST_KEY)
 
 LOCAL_IP = get_local_ip()
 PORT = 31621
-
+#PORT = 5000
 @app.route("/public", methods=["GET"])
 def public():
     if "text/html" in request.headers.get("Accept", ""):
